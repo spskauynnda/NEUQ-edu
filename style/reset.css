@@ -1,0 +1,47 @@
+*{
+    padding:0;
+    border:0;
+    margin:0;
+}
+
+body{
+    font-family: "微软雅黑";
+    font-size: 12px;
+    line-height: 22px;
+    color: #666;
+}
+
+li,dd,dl,dt{
+    list-style-type:none;
+}
+
+i{
+    font-style: normal;
+}
+
+
+a,h4{
+    text-decoration: none;
+    color: #000
+}
+
+input,select{
+    outline: none;
+    border: none;
+    /*ie6兼容*/background: none;
+}
+
+
+.fl{float: left}
+.fr{float: right}
+
+.clearfix:before,.clearfix:after{           /*网上搜的*/
+    content:"";
+    display:table;}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+
+
+

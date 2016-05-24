@@ -1,0 +1,38 @@
+.comWidth{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topBar{
+    background: #073f7b;
+    height: 30px;
+}
+.topBar ul{
+
+}
+.topBar ul li{
+    display: inline;
+    line-height: 30px;
+    padding: 0 6px;
+}
+.topBar ul li a{
+    color: #c1cdec;
+}
+.topBar ul li a:hover{
+    color: #c1cdec;
+}
+
+.logoBar{
+    height: 71px;
+    background: #004EA1;
+    padding: 22px 0;
+    border-top: 1px inset #1259A5;
+    border-bottom: 1px inset #1259A5;
+}
+.logo_bg{
+    margin-top:-10px;
+}
+.navBar{
+    height: 46px;
+    background: #004EA1;
+}
