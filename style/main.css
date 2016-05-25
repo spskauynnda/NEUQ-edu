@@ -5,14 +5,14 @@
 
 .topBar{
     background: #073f7b;
-    height: 30px;
+    height: 28px;
 }
 .topBar ul{
 
 }
 .topBar ul li{
     display: inline;
-    line-height: 30px;
+    line-height: 28px;
     padding: 0 6px;
 }
 .topBar ul li a{
@@ -28,11 +28,90 @@
     padding: 22px 0;
     border-top: 1px inset #1259A5;
     border-bottom: 1px inset #1259A5;
+    overflow: hidden;
 }
 .logo_bg{
     margin-top:-10px;
 }
+.search{
+    height:34px;
+    width: 200px;
+    margin-left: 950px;
+    position: relative;
+}
+.search_box{
+    height: 32px;
+    width: 200px;
+    padding: 1px 30px 1px 10px;
+    background: #04458A;
+    opacity: 0.75;
+    position: absolute;
+    left: 0;
+    top: 32px;
+}
+/*.search_box:checked{*/
+     /*border: 2px solid #004EA1;*/
+/*}*/
+
+.search_btn{
+    height: 32px;
+    width: 40px;
+    padding: 1px 6px 1px 6px;
+    position: absolute;
+    left: 200px;
+    top: 32px;
+    background: url("../img/but.png");
+    cursor: pointer;
+}
+.search_btn:hover{
+    border: 1px solid #073f7b;
+}
+
 .navBar{
     height: 46px;
     background: #004EA1;
 }
+.navList>li{
+    height: 46px;
+    padding: 0 40px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+.navList li>a{
+    color: #FFF;
+    line-height: 46px;
+    font-size: 16px;
+    text-align: center;
+    width: 144px;
+}
+.navList li div{
+    width: 180px;
+    background: #073f7b;
+    position: absolute;
+    left: 0;
+    top: 46px;
+    display: none;
+}
+.navList>li div a{
+    font-size: 14px;
+    text-align: left;
+    line-height: 38px;
+    margin-left: 20px;
+}
+.navList li:hover{
+    background: #073f7b;
+}
+.navList>li:hover > div{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
