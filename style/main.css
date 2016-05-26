@@ -107,6 +107,141 @@
 }
 
 
+.container{
+    height: 394px;
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+.container input,
+.container input + div{
+    position: absolute;
+    bottom: 13px;
+}
+.container input{
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+}
+.container input + div{
+    z-index: 100;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #FFC600;
+}
+.container input:checked + div{
+    background: #FFF;
+}
+#control-1,#control-1 + div{    left:530px;    }
+#control-2,#control-2 + div{    left:558px;    }
+#control-3,#control-3 + div{    left:586px;    }
+#control-4,#control-4 + div{    left:614px;    }
+#control-5,#control-5 + div{    left:642px;    }
+#control-6,#control-6 + div{    left:670px;    }
+.scroll{
+    height: 394px;
+    width: 7205px;                  /*不给这个宽度如何让panel并排显示  &&  下面用像素控制移动的话如何设置自适应*/
+    /*overflow: hidden;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+.panel{
+    float: left;
+}
+#control-1:checked ~ .scroll{
+    -webkit-transform: translateX(0);
+}
+#control-2:checked ~ .scroll{
+    -webkit-transform: translateX(-1200px);
+}
+#control-3:checked ~ .scroll{
+    -webkit-transform: translateX(-2400px);
+}
+#control-4:checked ~ .scroll{
+    -webkit-transform: translateX(-3600px);
+}
+#control-5:checked ~ .scroll{
+    -webkit-transform: translateX(-4800px);
+}
+#control-6:checked ~ .scroll{
+    -webkit-transform: translateX(-6000px);
+}
+
+.tNews{
+    height: 460px;
+    width: 100%;
+}
+.tNews_title{
+    width: 1200px;
+    height: 66px;
+    /*padding: 10px;*/
+    margin: 10px auto;
+    font-size: 22px;
+    color: #000;
+    line-height: 66px;
+}
+.tNews .comWidth{
+    overflow: hidden;
+}
+.tNews_scroll{
+    height: 374px;
+    width: 6000px;
+}
+.tNews_scroll .panel{
+    height: 374px;
+    width: 376px;
+    margin-right: 35px;
+}
+.tNews_scroll .panel img{
+    height: 224px;
+    width: 376px;
+}
+.tNews_panel_bottom{
+    margin-top: 20px;
+    width: 376px;
+}
+.tNpb_left{
+    width: 67px;
+    height: 68px;
+    float: left;
+    text-align: center;
+}
+.tNpb_left h3{
+    width: 67px;
+    height: 46px;
+    background: #073f7b;
+    color: #FFF;
+    font-size: 28px;
+    line-height: 46px;
+}
+.tNpb_right{
+    float: right;
+    width: 280px;
+}
+.tNpb_right span {
+    color: #000;
+    font-size: 16px;
+}
+
+
+
+
+
+
 
 
 
