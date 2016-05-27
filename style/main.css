@@ -263,7 +263,7 @@
 
 .main{
     padding-top: 25px;
-    height: 652px;
+    height: 662px;
 }
 .main_Left{
     height: 652px;
@@ -360,7 +360,7 @@
 }
 
 .wLink{
-    padding-top: 25px;
+    padding-top: 5px;
     /*overflow: hidden;*/
 }
 .wLink_title {
@@ -404,8 +404,8 @@
 .foot_left{
     width: 460px;
     line-height: 30px;
-    padding: 10px 0;
-    height: 150px;
+    padding-top:10px;
+    height: 140px;
     margin:0;
 }
 .foot_left span{
@@ -452,3 +452,10 @@
 
 
 
+/*
+Q：
+1.轮播图很多，如何加快加载速度？
+2.轮播图如何实现左右翻滚按钮
+3.input框如何设置checked时的边框效果？
+4.非全屏下的自适应问题
+*/
