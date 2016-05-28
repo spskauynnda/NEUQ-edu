@@ -3,6 +3,8 @@
     margin: 0 auto;
 }
 
+
+/*顶部3栏*/
 .topBar{
     background: #073f7b;
     height: 28px;
@@ -49,9 +51,9 @@
     left: 0;
     top: 32px;
 }
-.search_box:checked{
+.search_box:hover{
      /*border: 2px solid #004EA1;*/
-    border: 1px solid #FFF:
+    border: 1px solid #a6c4df;
 }
 
 .search_btn{
@@ -65,9 +67,11 @@
     cursor: pointer;
 }
 .search_btn:hover{
-    border: 1px solid #073f7b;
+    border: 2px solid #073f7b;
+    border-radius: 2px;
 }
 
+/*首页轮播图*/
 .navBar{
     height: 46px;
     background: #004EA1;
@@ -108,7 +112,9 @@
     display: block;
 }
 
-
+.banner .comWidth{
+    position: relative;
+}
 .container{
     height: 394px;
     width: 1200px;
@@ -146,6 +152,8 @@
     width: 7205px;                  /*不给这个宽度如何让panel并排显示  &&  下面用像素控制移动的话如何设置自适应*/
     /*overflow: hidden;*/
     position: relative;
+    left: 0;
+    top: 0;
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
@@ -180,7 +188,46 @@
 #control-6:checked ~ .scroll{
     -webkit-transform: translateX(-6000px);
 }
+/*banner的左右滑动按钮*/
+.banner_left{
+    height:80px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -40px;
+    background: #BD0000  url("../img/slideshow.png") no-repeat 17px center;;
+    z-index:1;
+    opacity: 0;
+    cursor: pointer;
+}
+.banner_right{
+    height:80px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -40px;
+    background: #BD0000 url("../img/slideshow.png") no-repeat -46px center;
+    z-index:1;
+    opacity: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.slow{
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.banner .comWidth:hover .banner_left,
+.banner .comWidth:hover .banner_right{
+    opacity: 1;
+}
 
+
+/*头条新闻*/
 .tNews{
     height: 460px;
     width: 100%;
@@ -261,6 +308,7 @@
     /*transform-origin: 100% 0;*/
 /*}*/
 
+/*中间部分*/
 .main{
     padding-top: 25px;
     height: 662px;
@@ -394,6 +442,8 @@
     margin-right: 0;
 }
 
+
+/*foot、copyRight*/
 .foot{
     padding: 50px 0 42px 0;
     background: url(../img/foot_bg.jpg) ;
