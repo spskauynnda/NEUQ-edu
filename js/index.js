@@ -15,10 +15,10 @@ window.onload = function () {
     var oScr = document.getElementById("scroll");
     oScr.style.position = "absolute";
     oBanleft.onclick = function() {
-        oScr.style.left = (myParseInt(oScr.style.left) - 1200) + "px";
+        oScr.style.left = (myParseInt(oScr.style.left) + 1200) + "px";
     }
     oBanright.onclick = function(){
-        oScr.style.left = (myParseInt(oScr.style.left) + 1200) + "px" ;
+        oScr.style.left = (myParseInt(oScr.style.left) - 1200) + "px" ;
     }
                 // wrong：
                 // oBanleft.style.left = myParseInt(oBanleft.style.left) + "100px"; 之前用来和不带left初值的scroll作对比的
